@@ -8,13 +8,32 @@ const Container = styled.div`
   p {
     margin-top: 1rem;
   }
+  video {
+    border-radius: 8px;
+    width: 100%;
+    :focus {
+      outline: none;
+    }
+  }
+  .left {
+    margin: auto 1rem;
+  }
 `;
 
 const Hero = () => (
-  <Container className="section">
-    <div className="container">
+  <Container>
+    <div className="section container">
       <div className="columns is-vcentered">
-        <div className="column"></div>
+        <div className="column left">
+          <video width="600" controls>
+            <source
+              src="https://pixabay.com/videos/bitcoin-coin-money-currency-crypto-34616/"
+              type="video/mp4"
+            />
+            <source src="mov_bbb.ogg" type="video/ogg" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
         <div className="column">
           <Title>Welcome to CoinBase</Title>
           <Subtitle>
@@ -28,6 +47,7 @@ const Hero = () => (
         </div>
       </div>
     </div>
+    <img src={waveBottom} className="bottom-img" alt="wave" />
   </Container>
 );
 
