@@ -4,7 +4,8 @@ import { NextSeo } from 'next-seo';
 
 import sanity from '../utils/sanity';
 import Layout from '../components/Layout';
-import { Subtitle, Title, Button } from '../components/elements';
+import Hero from '../components/Hero';
+import HomeVideo from '../components/HomeVideo';
 
 function Index(props) {
   const { degrees = [], universities = [] } = props;
@@ -28,11 +29,8 @@ function Index(props) {
   return (
     <Layout>
       <NextSeo title="CoinBase" description="A short description goes here." />
-      <section className="section">
-        <Button secondary>dcd</Button>
-        <Subtitle>vbhjxhj</Subtitle>
-        <Title>jhasvcjchjk fjdjfd gj</Title>
-      </section>
+      <Hero />
+      <HomeVideo />
     </Layout>
   );
 }
