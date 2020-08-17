@@ -1,5 +1,5 @@
 export default {
   debug: process.env.NODE_ENV === 'development',
-  siteName: 'CoinBase',
-  projectKey: 'CoinBase',
+  siteName: 'Ethflix',
+  projectKey: 'Ethflix',
 };

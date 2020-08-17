@@ -1,4 +1,4 @@
-#  CoinBase
+#  Ethflix
 
 A starting point using ReactJs, bundled with awesome NextJs.
 Fetch data from Sanity CMS

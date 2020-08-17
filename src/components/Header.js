@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
+import logo from '../assets/images/logo.png';
+
+const Container = styled.div`
+  background: ${props => props.theme.darkBlack};
+  nav {
+    background: ${props => props.theme.darkBlack};
+  }
+`;
+
 const NavTitle = styled.div`
   align-self: center;
   a {
@@ -12,15 +21,15 @@ const NavTitle = styled.div`
 `;
 
 export default () => (
-  <div className="container">
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+  <Container>
+    <nav
+      className="navbar container"
+      role="navigation"
+      aria-label="main navigation">
       <NavTitle className="navbar-brand">
         <Link href="/">
-          <a className="navbar-item has-text-black is-size-4">
-            <img
-              src={require('../assets/images/dummy.jpg?resize&size=300&url&lqip')}
-              alt="dummy"
-            />
+          <a className="navbar-item  is-size-4">
+            <img src={logo} alt="logo" />
           </a>
         </Link>
       </NavTitle>
@@ -35,5 +44,5 @@ export default () => (
         </div>
       </div>
     </nav>
-  </div>
+  </Container>
 );
