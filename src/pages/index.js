@@ -4,6 +4,7 @@ import { NextSeo } from 'next-seo';
 
 import sanity from '../utils/sanity';
 import Layout from '../components/Layout';
+import { Subtitle, Title, Button } from '../components/elements';
 
 function Index(props) {
   const { degrees = [], universities = [] } = props;
@@ -26,21 +27,11 @@ function Index(props) {
 
   return (
     <Layout>
-      <NextSeo
-        title="Kickoff NextJs"
-        description="A short description goes here."
-      />
+      <NextSeo title="CoinBase" description="A short description goes here." />
       <section className="section">
-        <h1 className="title">Hello World</h1>
-        <p className="subtitle">
-          My first website with <strong>NextJs</strong>!
-        </p>
-        <button
-          type="button"
-          className="button is-light"
-          onClick={handleContact}>
-          Send Contact Message
-        </button>
+        <Button secondary>dcd</Button>
+        <Subtitle>vbhjxhj</Subtitle>
+        <Title>jhasvcjchjk fjdjfd gj</Title>
       </section>
     </Layout>
   );
