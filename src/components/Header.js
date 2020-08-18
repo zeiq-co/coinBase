@@ -30,7 +30,7 @@ const Container = styled.div`
     flex: 1;
     justify-content: center;
   }
-  a {
+  .nav-items {
     margin: auto 1.5rem;
   }
 `;
@@ -75,7 +75,7 @@ export default () => (
           {NavItems.map(item => (
             <a
               href={item.url}
-              className="navbar-item has-text-weight-semibold"
+              className="navbar-item has-text-weight-semibold nav-items"
               key={item.id}>
               {item.name}
             </a>

@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 // http://chir.ag/projects/name-that-color/
 export const colors = {
   caribbeanGreen: '#00D1B2',
+  colorGradient: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)',
 };
 
 export default {
@@ -23,5 +24,10 @@ export const GlobalStyle = createGlobalStyle`
 		margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif !important;
+  }
+  .title {
+    background: ${colors.colorGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
 `;

@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 import { Subtitle, Title } from './elements';
-import waveBottom from '../assets/images/wave-2.svg';
 
 const Container = styled.div`
+  .section {
+    padding: 3rem 1.5rem 0rem;
+  }
   background: ${props => props.theme.darkBlack};
   p {
     margin-top: 1rem;
@@ -25,7 +27,7 @@ const Hero = () => (
     <div className="section container">
       <div className="columns is-vcentered">
         <div className="column left">
-          <video width="600" controls>
+          <video controls>
             <source
               src="https://pixabay.com/videos/bitcoin-coin-money-currency-crypto-34616/"
               type="video/mp4"
@@ -47,7 +49,6 @@ const Hero = () => (
         </div>
       </div>
     </div>
-    <img src={waveBottom} className="bottom-img" alt="wave" />
   </Container>
 );
 

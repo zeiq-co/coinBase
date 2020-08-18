@@ -6,6 +6,7 @@ import sanity from '../utils/sanity';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import HomeVideo from '../components/HomeVideo';
+import OurUpdates from '../components/OurUpdates';
 
 function Index(props) {
   const { degrees = [], universities = [] } = props;
@@ -28,9 +29,10 @@ function Index(props) {
 
   return (
     <Layout>
-      <NextSeo title="CoinBase" description="A short description goes here." />
+      <NextSeo title="Ethflix" description="A short description goes here." />
       <Hero />
       <HomeVideo />
+      <OurUpdates />
     </Layout>
   );
 }
