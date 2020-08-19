@@ -7,14 +7,11 @@ import iconUp from '../assets/images/icon-down.svg';
 
 const Container = styled.div`
   padding: 1rem 1.5rem;
-  background: ${(props) => props.theme.darkBlack};
+  background: ${props => props.theme.darkBlack};
   border-radius: 10px;
   margin-bottom: 2rem;
   p {
     line-height: 27px !important;
-  }
-  svg {
-    color: #fff;
   }
   button {
     background: transparent;
@@ -23,15 +20,18 @@ const Container = styled.div`
   .is-flex {
     justify-content: space-between;
   }
+  img {
+    height: 0.75rem;
+  }
 `;
 
-const FaqItem = () => {
+const FaqItem = ({ data }) => {
   const [active, setActive] = useState(false);
   return (
     <Container>
       <div className="is-flex">
         <Title className="is-size-5 has-text-weight-bold is-uppercase">
-          WHAT is ETHFLIX?
+          {data.title}
         </Title>
         <button onClick={() => setActive(!active)} type="submit">
           {active ? (
@@ -41,13 +41,7 @@ const FaqItem = () => {
           )}
         </button>
       </div>
-      {active && (
-        <Subtitle>
-          Forsage is an international next-gen crowdfunding platform and the
-          first in the history of matrix marketing based on Ethereum smart
-          contracts.
-        </Subtitle>
-      )}
+      {active && <Subtitle>{data.subtitle}</Subtitle>}
     </Container>
   );
 };
