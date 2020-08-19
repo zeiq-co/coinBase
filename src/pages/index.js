@@ -6,7 +6,7 @@ import sanity from '../utils/sanity';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import HomeVideo from '../components/HomeVideo';
-import OurUpdates from '../components/OurUpdates';
+import Features from '../components/Features';
 
 function Index(props) {
   const { degrees = [], universities = [] } = props;
@@ -32,7 +32,7 @@ function Index(props) {
       <NextSeo title="Ethflix" description="A short description goes here." />
       <Hero />
       <HomeVideo />
-      <OurUpdates />
+      <Features />
     </Layout>
   );
 }

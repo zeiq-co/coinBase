@@ -45,7 +45,7 @@ const NavTitle = styled.div`
 const NavItems = [
   { id: 1, name: 'home', url: '/' },
   { id: 2, name: 'about', url: '/' },
-  { id: 3, name: 'blog', url: '/' },
+  { id: 3, name: 'faq', url: '/' },
   { id: 4, name: 'Contact Us', url: '/' },
 ];
 
@@ -75,7 +75,7 @@ export default () => (
           {NavItems.map(item => (
             <a
               href={item.url}
-              className="navbar-item has-text-weight-semibold nav-items"
+              className="navbar-item has-text-weight-semibold nav-items is-uppercase"
               key={item.id}>
               {item.name}
             </a>

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { Subtitle, Title } from './elements';
+import ethereum from '../assets/images/ethereum-banner.svg';
 
 const Container = styled.div`
   .section {
@@ -10,13 +11,13 @@ const Container = styled.div`
   p {
     margin-top: 1rem;
   }
-  video {
+  /* video {
     border-radius: 8px;
     width: 100%;
     :focus {
       outline: none;
     }
-  }
+  } */
   .left {
     margin: auto 1rem;
   }
@@ -27,24 +28,25 @@ const Hero = () => (
     <div className="section container">
       <div className="columns is-vcentered">
         <div className="column left">
-          <video controls>
+          {/* <video controls>
             <source
               src="https://pixabay.com/videos/bitcoin-coin-money-currency-crypto-34616/"
               type="video/mp4"
             />
             <source src="mov_bbb.ogg" type="video/ogg" />
             Your browser does not support HTML video.
-          </video>
+          </video> */}
+          <img src={ethereum} alt="ethereum" />
         </div>
         <div className="column">
-          <Title>Welcome to CoinBase</Title>
+          <Title>Welcome to Ethflix</Title>
           <Subtitle>
-            We have the best rates . Simply start your exchange right now. Sign
-            up for our Affiliate program and earn commission from each exchange.
-            The earnings are credited in your account instantly and can be
-            withdrawn right away. Also note some exchange directions are hidden
-            for unregistered user. To ensure to have access to all our exchange
-            directions and benefits kindly sign up and verify your identity.
+            Smart contract technology is a new phenomenon in the modern
+            decentralized economy. It allows, in accordance with the program
+            code, to process and distribute the financial flows of digital
+            assets. All processes take place in an open, decentralized
+            blockchain network based on the Ethereum crypto currency, the
+            infrastructure of which supports the operation of such contracts.
           </Subtitle>
         </div>
       </div>
