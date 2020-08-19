@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { Subtitle, Title } from './elements';
-import waveTop from '../assets/images/wave-2.svg';
-import waveBottom from '../assets/images/wave-3.svg';
+import iconDown from '../assets/images/icon-up.svg';
+import iconUp from '../assets/images/icon-down.svg';
 
 const Container = styled.div`
-  padding: 1rem;
-  background: ${props => props.theme.darkBlack};
+  padding: 1rem 1.5rem;
+  background: ${(props) => props.theme.darkBlack};
   border-radius: 10px;
+  margin-bottom: 2rem;
   p {
     line-height: 27px !important;
   }
@@ -34,13 +35,9 @@ const FaqItem = () => {
         </Title>
         <button onClick={() => setActive(!active)} type="submit">
           {active ? (
-            <p>
-              <i className="fas fa-chevron-up"></i>
-            </p>
+            <img src={iconUp} alt="arrow-up" />
           ) : (
-            <p>
-              <i className="fas fa-chevron-down"></i>
-            </p>
+            <img src={iconDown} alt="arrow-down" />
           )}
         </button>
       </div>
