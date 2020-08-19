@@ -7,7 +7,7 @@ import waveTop from '../assets/images/wave-1.svg';
 const Container = styled.div`
   background: linear-gradient(174.48deg, #fd749b -12.41%, #281ac8 88.56%);
   h2 {
-    color: ${props => props.theme.darkBlack};
+    color: ${(props) => props.theme.darkBlack};
     font-size: 8rem;
   }
   p {

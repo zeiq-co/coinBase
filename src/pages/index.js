@@ -7,6 +7,8 @@ import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import HomeVideo from '../components/HomeVideo';
 import Features from '../components/Features';
+import PartnerResults from '../components/PartnerResults';
+import Faq from '../components/Faq';
 
 function Index(props) {
   const { degrees = [], universities = [] } = props;
@@ -33,6 +35,8 @@ function Index(props) {
       <Hero />
       <HomeVideo />
       <Features />
+      <PartnerResults />
+      <Faq />
     </Layout>
   );
 }
