@@ -6,6 +6,10 @@ import PartnerCard from './PartnerCard';
 
 const Container = styled.div`
   background: ${(props) => props.theme.darkBlack};
+  .section {
+    padding: 3rem 1.5rem 4.5rem;
+  }
+
 `;
 
 const partners = [
@@ -72,6 +76,29 @@ const PartnerResults = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          dots: true,
+          infinite: true,
+          speed: 500,
+        },
+      },
+    ],
   };
   return (
     <Container>

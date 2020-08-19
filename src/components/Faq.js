@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
-import { Subtitle, Title } from './elements';
+import { Title } from './elements';
+import FaqItem from './FaqItem';
 
 const Container = styled.div`
   background: ${props => props.theme.colorGradient};
-  .faq {
-    padding: 1rem;
-    background: ${props => props.theme.colorGradient};
-    border-radius: 10px;
+  .has-text-left {
+    margin-top: 2rem;
   }
 `;
 
@@ -17,7 +16,10 @@ const Faq = () => (
       <div className="columns is-centered">
         <div className="column is-10 has-text-centered">
           <Title dark>Frequently Asked Questions</Title>
-          <div className="faq">dd</div>
+          <div className="has-text-left">
+            <FaqItem />
+            <FaqItem />
+          </div>
         </div>
       </div>
     </div>

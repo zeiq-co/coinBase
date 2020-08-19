@@ -30,4 +30,11 @@ export const GlobalStyle = createGlobalStyle`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   }
+  button {
+    :focus {
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
 `;

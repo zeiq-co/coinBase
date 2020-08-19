@@ -52,6 +52,7 @@ const featureCards = [
     title: 'DECENTRALIZATION',
     subtitle:
       'There are no managers or administrators, there are only the creators who are equal participants in the project, like everyone else',
+    grid: true,
   },
   {
     id: 5,
@@ -80,9 +81,13 @@ const Features = () => (
       </Subtitle>
       <div className="columns is-multiline is-variable is-6 section">
         {featureCards.map(item => (
-          <div className="column has-text-left is-half is-flex">
+          <div
+            className={`column has-text-left is-half ${!item.grid &&
+              'is-flex'}`}>
             <div className="featured-card">
-              <Title>{item.title} </Title>
+              <Title className="is-size-5-mobile has-text-weight-bold">
+                {item.title}{' '}
+              </Title>
               <Subtitle>{item.subtitle}</Subtitle>
             </div>
           </div>
