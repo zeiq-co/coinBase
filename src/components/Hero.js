@@ -10,6 +10,13 @@ const Container = styled.div`
     color: ${(props) => props.theme.darkBlack};
     font-size: 8rem;
   }
+  .img-wrapper {
+    transition: all 0.5s ease;
+    transition-duration: 5s;
+    :hover {
+      transform: rotateY(360deg);
+    }
+  }
   p {
     margin: 0rem 0rem 3rem;
   }
@@ -37,7 +44,9 @@ const Hero = () => (
           <Button secondary>JOIN US</Button>
         </div>
         <div className="column">
-          <img src={hero} alt="hero-img" />
+          <div className="img-wrapper">
+            <img src={hero} className="hero-img" alt="hero-img" />
+          </div>
         </div>
       </div>
     </div>
