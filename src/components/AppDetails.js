@@ -4,6 +4,8 @@ import { Title, Subtitle } from './elements';
 import topBg from '../assets/images/app-details-wave.svg';
 import appleStore from '../assets/images/apple-store.svg';
 import googleStore from '../assets/images/google-store.svg';
+import appSplash from '../assets/images/mobile-1.svg';
+import appDetails from '../assets/images/mobile-2.svg';
 
 const Container = styled.div`
   background: ${props => props.theme.colorGradient};
@@ -21,6 +23,9 @@ const Container = styled.div`
   .google-link {
     height: 3rem;
     margin: 1rem 1rem 0rem;
+  }
+  .app-img {
+    margin: 1rem;
   }
 `;
 
@@ -48,8 +53,9 @@ const AppDetails = () => (
     </div>
     <div className="section">
       <div className="container">
-        <div className="columns is-centered">
-          <div className="column is-8 has-text-centered "></div>
+        <div className="columns is-centered has-text-centered">
+          <img src={appSplash} className="app-img" alt="mobile-mokeUp" />
+          <img src={appDetails} className="app-img" alt="app-img" />
         </div>
       </div>
     </div>
