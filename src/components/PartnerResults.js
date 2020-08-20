@@ -5,11 +5,28 @@ import { Subtitle, Title } from './elements';
 import PartnerCard from './PartnerCard';
 
 const Container = styled.div`
-  background: ${(props) => props.theme.darkBlack};
+  background: ${props => props.theme.darkBlack};
   .section {
     padding: 3rem 1.5rem 4.5rem;
   }
-
+  .slider-wrapper {
+    padding: 0rem 1rem;
+  }
+  .slick-dots li button:before {
+    font-size: 1rem;
+  }
+  .slick-dots li.slick-active button:before,
+  .slick-dots li.slick-active button:hover {
+    opacity: 1;
+    color: #fd749b;
+  }
+  .slick-dots {
+    bottom: -35px;
+  }
+  .slick-dots li button:before {
+    font-size: 1rem;
+    color: #fff;
+  }
 `;
 
 const partners = [
@@ -73,16 +90,19 @@ const PartnerResults = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           dots: true,
           infinite: true,
-          speed: 500,
+          speed: 2000,
           slidesToShow: 2,
           slidesToScroll: 1,
         },
@@ -95,7 +115,7 @@ const PartnerResults = () => {
           initialSlide: 1,
           dots: true,
           infinite: true,
-          speed: 500,
+          speed: 2000,
         },
       },
     ],
@@ -113,11 +133,13 @@ const PartnerResults = () => {
             <a>Contract address: 0x5acc84a3e955Bdd76467d0fFB97</a>
           </div>
         </div>
-        <Slider {...settings}>
-          {partners.map((item) => (
-            <PartnerCard key={item.id} item={item} />
-          ))}
-        </Slider>
+        <div className="slider-wrapper">
+          <Slider {...settings}>
+            {partners.map(item => (
+              <PartnerCard key={item.id} item={item} />
+            ))}
+          </Slider>
+        </div>
       </div>
     </Container>
   );
