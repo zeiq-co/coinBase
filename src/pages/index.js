@@ -9,6 +9,7 @@ import HomeVideo from '../components/HomeVideo';
 import Features from '../components/Features';
 import PartnerResults from '../components/PartnerResults';
 import Faq from '../components/Faq';
+import AppDetails from '../components/AppDetails';
 
 function Index(props) {
   const { degrees = [], universities = [] } = props;
@@ -37,6 +38,7 @@ function Index(props) {
       <Features />
       <PartnerResults />
       <Faq />
+      <AppDetails />
     </Layout>
   );
 }

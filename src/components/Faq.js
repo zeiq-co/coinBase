@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import { Title } from './elements';
 import FaqItem from './FaqItem';
+import waveBottom from '../assets/images/faq-bottom-wave.svg';
 
 const Container = styled.div`
   background: ${props => props.theme.colorGradient};
@@ -63,6 +64,7 @@ const Faq = () => (
         </div>
       </div>
     </div>
+    <img src={waveBottom} className="bottom-img" alt="wave" />
   </Container>
 );
 export default Faq;
