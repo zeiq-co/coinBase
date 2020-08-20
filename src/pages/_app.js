@@ -47,6 +47,7 @@ class MyApp extends App {
                 type="text/css"
                 href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
               />
+              <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
             </Head>
             <Component {...pageProps} />
             <GlobalStyle />

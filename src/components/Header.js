@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { useState } from 'react';
 
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/Logo.svg';
 import Button from './elements/Button';
 
 const Container = styled.div`
@@ -41,9 +41,6 @@ const Container = styled.div`
 
 const NavTitle = styled.div`
   align-items: center;
-  img {
-    height: 2rem;
-  }
 `;
 
 const NavItems = [
@@ -67,7 +64,7 @@ const Header = () => {
         aria-label="main navigation">
         <NavTitle className="navbar-brand">
           <Link href="/">
-            <img src={logo} alt="logo" width="142" />
+            <img src={logo} alt="logo"  />
           </Link>
           <a
             role="button"
