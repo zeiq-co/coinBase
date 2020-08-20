@@ -64,7 +64,7 @@ const Header = () => {
         aria-label="main navigation">
         <NavTitle className="navbar-brand">
           <Link href="/">
-            <img src={logo} alt="logo"  />
+            <img src={logo} alt="logo" />
           </Link>
           <a
             role="button"
@@ -98,7 +98,14 @@ const Header = () => {
             ))}
           </div>
           <div className="navbar-end">
-            <Button>login</Button>
+            <div className="buttons">
+              <Link href="/logIn">
+                <Button>login</Button>
+              </Link>
+              <Link href="/register">
+                <Button>SIGNUP</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
