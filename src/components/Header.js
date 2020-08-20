@@ -46,7 +46,7 @@ const NavTitle = styled.div`
 const NavItems = [
   { id: 1, name: 'home', url: '/' },
   { id: 2, name: 'about', url: '/#about' },
-  { id: 3, name: 'faq', url: '#faq' },
+  { id: 3, name: 'faq', url: '/#faq' },
   { id: 4, name: 'Contact Us', url: '/#contact' },
 ];
 
