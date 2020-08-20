@@ -7,6 +7,10 @@ const Container = styled.button`
   background: ${props =>
     props.secondary ? props.theme.darkBlack : props.theme.backgroundGradient};
   border: none;
+  transition: all 0.5s ease;
+  :hover {
+    transform: scale(1.07);
+  }
   span {
     font-size: ${props => props.theme.fontSmall}!important;
     background: ${props =>

@@ -22,6 +22,10 @@ const Container = styled.div`
     background: ${props => props.theme.darkBlack};
     padding: 1rem 1.5rem;
     border-radius: 15px;
+    transition: all 0.5s ease;
+    :hover {
+      transform: scale(1.06);
+    }
   }
   p {
     line-height: 27px !important;
