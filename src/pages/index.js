@@ -33,7 +33,10 @@ function Index(props) {
 
   return (
     <Layout>
-      <NextSeo title="Ethflix" description="A short description goes here." />
+      <NextSeo
+        title="Ethflix"
+        description="A matrix platform smart contract Ethereum"
+      />
       <Hero />
       <HomeVideo />
       <Features />
