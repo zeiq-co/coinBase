@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Subtitle, Title, Button } from './elements';
 
 const Container = styled.div`
+  padding: 1rem 0 2rem;
   background: ${props => props.theme.darkBlack};
   .bottom {
     background: ${props => props.theme.colorGradient};
@@ -15,7 +16,7 @@ const Container = styled.div`
 
 const HomeSignUp = () => (
   <Container>
-    <div className="section">
+    <div className="section container">
       <div className="columns is-vcentered is-centered">
         <div className="column is-5 has-text-centered">
           <Title>Subscribe our newsletter</Title>
@@ -26,7 +27,7 @@ const HomeSignUp = () => (
         </div>
       </div>
       <div className="columns is-centered">
-        <div className="column is-7 has-text-centered">
+        <div className="column is-9 has-text-centered">
           <div className="section  bottom columns is-centered">
             <div className="column is-9">
               <div className="field is-grouped">
