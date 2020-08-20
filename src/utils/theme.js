@@ -21,6 +21,7 @@ export default {
 
 export const GlobalStyle = createGlobalStyle`
   body {
+    background: #000;
 		margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif !important;

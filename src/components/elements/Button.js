@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.button`
   height: 54px;
-  padding: 1.5rem 2.5rem !important;
+  padding: 0rem 2.5rem !important;
   background: ${props =>
     props.secondary ? props.theme.darkBlack : props.theme.backgroundGradient};
   border: none;

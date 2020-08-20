@@ -12,6 +12,9 @@ const Container = styled.div`
   input {
     height: 54px;
   }
+  .control {
+    margin: 1rem 0rem;
+  }
 `;
 
 const HomeSignUp = () => (
@@ -30,7 +33,7 @@ const HomeSignUp = () => (
         <div className="column is-9 has-text-centered">
           <div className="section  bottom columns is-centered">
             <div className="column is-9">
-              <div className="field is-grouped">
+              <div className="field is-grouped is-block-mobile">
                 <p className="control is-expanded">
                   <input
                     className="input is-rounded"
