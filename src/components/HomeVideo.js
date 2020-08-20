@@ -24,7 +24,7 @@ const Container = styled.div`
 `;
 
 const Hero = () => (
-  <Container>
+  <Container id="about">
     <div className="section container">
       <div className="columns is-vcentered">
         <div className="column left">

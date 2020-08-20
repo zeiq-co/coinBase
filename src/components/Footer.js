@@ -16,7 +16,7 @@ const Line = styled.div`
 `;
 
 const Footer = () => (
-  <Container className="">
+  <Container id="contact">
     <div className="section">
       <Line />
       <div className="container">

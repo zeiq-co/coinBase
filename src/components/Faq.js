@@ -51,7 +51,7 @@ const faq = [
 ];
 
 const Faq = () => (
-  <Container>
+  <Container id="faq">
     <div className="section container">
       <div className="columns is-centered">
         <div className="column is-10 has-text-centered">
