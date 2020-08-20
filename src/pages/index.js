@@ -10,6 +10,7 @@ import Features from '../components/Features';
 import PartnerResults from '../components/PartnerResults';
 import Faq from '../components/Faq';
 import AppDetails from '../components/AppDetails';
+import HomeSignUp from '../components/HomeSignUp';
 
 function Index(props) {
   const { degrees = [], universities = [] } = props;
@@ -39,6 +40,7 @@ function Index(props) {
       <PartnerResults />
       <Faq />
       <AppDetails />
+      <HomeSignUp />
     </Layout>
   );
 }
