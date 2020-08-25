@@ -64,7 +64,9 @@ const Header = () => {
         aria-label="main navigation">
         <NavTitle className="navbar-brand">
           <Link href="/">
-            <img src={logo} alt="logo" />
+            <a>
+              <img src={logo} alt="logo" />
+            </a>
           </Link>
           <a
             role="button"
@@ -89,12 +91,11 @@ const Header = () => {
           } has-text-centered-mobile `}>
           <div className="navbar-start">
             {NavItems.map(item => (
-              <a
-                href={item.url}
-                className="navbar-item has-text-weight-semibold nav-items is-uppercase"
-                key={item.id}>
-                {item.name}
-              </a>
+              <Link href={item.url} key={item.id}>
+                <a className="navbar-item has-text-weight-semibold nav-items is-uppercase">
+                  {item.name}
+                </a>
+              </Link>
             ))}
           </div>
           <div className="navbar-end">
