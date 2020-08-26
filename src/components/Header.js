@@ -23,6 +23,13 @@ const Container = styled.div`
     flex: 1;
     justify-content: center;
   }
+  .navbar-item {
+    background: ${props => props.theme.primaryColor};
+    :hover {
+      border-bottom: 2px solid #00ece2;
+      background: ${props => props.theme.primaryColor};
+    }
+  }
   .nav-items {
     margin: auto 1.5rem;
   }
