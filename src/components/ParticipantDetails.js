@@ -1,12 +1,26 @@
 import styled from 'styled-components';
 
 import { Title, Subtitle } from './elements';
+import waveBottom from '../assets/images/hero-bg2.png';
 
 const Container = styled.div`
-  margin-top: 2rem;
+  background: ${props => props.theme.colorGradient};
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
   .item {
     border-radius: 1rem;
-    background: red;
+    background: ${props => props.theme.darkBlack};
+    transition: all 0.5s ease;
+    :hover {
+      transform: scale(1.06);
+    }
+  }
+  .cards {
+    padding: 2rem 1.5rem;
+  }
+  .columns {
+    justify-content: space-between;
   }
 `;
 
@@ -31,17 +45,22 @@ const CardItems = [
 const ParticipantDetails = () => (
   <Container className="section">
     <div className="container">
-      <div className="columns">
-        {CardItems.map(item => (
-          <div className="column">
-            <div className="item">
-              <div className="section has-text-centered">
-                <Subtitle>{item.title}</Subtitle>
-                <Title>{item.count}</Title>
+      <div className="columns is-vcentered">
+        <div className="column is-5">
+          <img src={waveBottom} className="bottom-img" alt="wave" />
+        </div>
+        <div className="column is-5">
+          {CardItems.map(item => (
+            <div className="column">
+              <div className="item">
+                <div className="has-text-centered cards">
+                  <Subtitle>{item.title}</Subtitle>
+                  <Title>{item.count}</Title>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   </Container>

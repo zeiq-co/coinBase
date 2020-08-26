@@ -12,7 +12,7 @@ export default {
     'linear-gradient(174.48deg, #FD749B -12.41%, #281AC8 88.56%)',
   colorGradient: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)',
   darkBlack: '#000000',
-  textColor: '#333333',
+  textColor: '#666d7a',
   textLight: '#A2A2A2',
   fontSmall: '14px',
   fontMedium: '18px',
