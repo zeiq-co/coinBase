@@ -3,9 +3,11 @@ import Slider from 'react-slick';
 
 import { Subtitle, Title } from './elements';
 import PartnerCard from './PartnerCard';
+import background from '../assets/images/slider-bg.jpg';
 
 const Container = styled.div`
-  background: ${props => props.theme.darkBlack};
+    background-image:url('${background}');
+    background-position: center;
   .section {
     padding: 3rem 1.5rem 4.5rem;
   }
@@ -18,14 +20,14 @@ const Container = styled.div`
   .slick-dots li.slick-active button:before,
   .slick-dots li.slick-active button:hover {
     opacity: 1;
-    color: #fd749b;
+    color: #00ece2;
   }
   .slick-dots {
     bottom: -35px;
   }
   .slick-dots li button:before {
     font-size: 1rem;
-    color: #fff;
+    color: ${props => props.theme.lightAccent};
   }
 `;
 
@@ -125,7 +127,7 @@ const PartnerResults = () => {
       <div className="section container">
         <div className="columns is-centered">
           <div className="column is-9 has-text-centered">
-            <Title>Partner results</Title>
+            <Title white>Partner results</Title>
             <Subtitle>
               All data is stored on the blockchain in the public domain and can
               be verified!
@@ -135,7 +137,7 @@ const PartnerResults = () => {
         </div>
         <div className="slider-wrapper">
           <Slider {...settings}>
-            {partners.map(item => (
+            {partners.map((item) => (
               <PartnerCard key={item.id} item={item} />
             ))}
           </Slider>

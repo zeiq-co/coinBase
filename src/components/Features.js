@@ -1,25 +1,17 @@
 import styled from 'styled-components';
 
 import { Subtitle, Title } from './elements';
-import waveTop from '../assets/images/wave-2.svg';
-import waveBottom from '../assets/images/wave-3.svg';
 
 const Container = styled.div`
-  background: ${props => props.theme.colorGradient};
+  background: ${props => props.theme.mainBrandColor};
   .section {
-    padding: 2rem 1.5rem;
-  }
-  .bottom-img {
-    margin-bottom: -0.5rem;
-  }
-  .top-img {
-    margin-top: -2px;
+    padding: 4rem 1.5rem;
   }
   .columns {
     margin-top: 2rem;
   }
   .featured-card {
-    background: ${props => props.theme.darkBlack};
+    background: ${props => props.theme.lightAccent};
     padding: 1rem 1.5rem;
     border-radius: 15px;
     transition: all 0.5s ease;
@@ -74,10 +66,9 @@ const featureCards = [
 
 const Features = () => (
   <Container>
-    <img src={waveTop} className="top-img" alt="wave" />
     <div className="section container has-text-centered">
-      <Title dark>International next-gen crowdfunding platform</Title>
-      <Subtitle dark>
+      <Title white>International next-gen crowdfunding platform</Title>
+      <Subtitle>
         Decentralized marketing is powered by the revolutionary smart contract
         technology*. The code for Forsage’s smart contract can be seen here
         fully open, so you can be completely confident in the security and
@@ -89,8 +80,11 @@ const Features = () => (
             className={`column has-text-left is-half ${!item.grid &&
               'is-flex'}`}>
             <div className="featured-card">
-              <Title className="is-size-5-mobile has-text-weight-bold">
-                {item.title}{' '}
+              <Title
+                medium
+                white
+                className="is-size-5-mobile has-text-weight-bold">
+                {item.title}
               </Title>
               <Subtitle>{item.subtitle}</Subtitle>
             </div>
@@ -98,7 +92,6 @@ const Features = () => (
         ))}
       </div>
     </div>
-    <img src={waveBottom} className="bottom-img" alt="wave" />
   </Container>
 );
 

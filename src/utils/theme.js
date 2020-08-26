@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     background: #000;
 		margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Exo 2', sans-serif !important;
   }
   .title {
     background: ${colors.colorGradient};
