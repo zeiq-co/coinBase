@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Subtitle, Button } from './elements';
 
 import hero from '../assets/images/hero-img.png';
-import waveTop from '../assets/images/wave-1.svg';
 
 const Container = styled.div`
   background: ${props => props.theme.primaryColor};
