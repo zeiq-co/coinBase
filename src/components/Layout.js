@@ -7,7 +7,6 @@ const Container = styled.div``;
 export default ({ children, userDashboard }) => (
   <Container>
     {userDashboard ? <CustomerHeader /> : <Header />}
-
     {children}
     <Footer />
   </Container>

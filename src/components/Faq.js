@@ -58,14 +58,13 @@ const Faq = () => (
         <div className="column is-10 has-text-centered">
           <Title dark>Frequently Asked Questions</Title>
           <div className="has-text-left">
-            {faq.map((item) => (
+            {faq.map(item => (
               <FaqItem key={item.id} data={item} />
             ))}
           </div>
         </div>
       </div>
     </div>
-    <img src={waveBottom} className="bottom-img" alt="wave" />
   </Container>
 );
 export default Faq;

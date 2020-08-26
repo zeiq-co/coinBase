@@ -1,20 +1,18 @@
 import styled from 'styled-components';
 
 import { Title, Subtitle } from './elements';
-import topBg from '../assets/images/app-details-wave.svg';
+import background from '../assets/images/app-detailBg.jpg';
 import appleStore from '../assets/images/apple-store.svg';
 import googleStore from '../assets/images/google-store.svg';
 import appSplash from '../assets/images/mobile-1.svg';
 import appDetails from '../assets/images/mobile-2.svg';
 
 const Container = styled.div`
-  background: ${props => props.theme.colorGradient};
-  .section-top {
-    padding: 0rem 1.5rem 5rem;
-    background-image:url('${topBg}');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
+  padding: 1rem 0rem;
+  background-image:url('${background}');
+  background-position: center;
+  .top {
+    padding: 3rem 1.5rem 1rem;
   }
   .apple-link {
     height: 4rem;
@@ -31,11 +29,11 @@ const Container = styled.div`
 
 const AppDetails = () => (
   <Container>
-    <div className="section section-top">
+    <div className="section top">
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-5 has-text-centered">
-            <Title>Download our app</Title>
+            <Title white>Download our app</Title>
             <Subtitle>
               Discover exclusive deals and discounts with our mobile experience.
             </Subtitle>
