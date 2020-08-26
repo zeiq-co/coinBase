@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import { Subtitle, Title, Button } from './elements';
 
 const Container = styled.div`
-  padding: 1rem 0 2rem;
-  background: ${props => props.theme.darkBlack};
+  padding: 0 0 2.5rem;
+  background: ${props => props.theme.gradientSecondary};
   .bottom {
-    background: ${props => props.theme.colorGradient};
+    background: ${props => props.theme.mainBrandColor};
     border-radius: 10px;
+    margin-top: 0.5rem;
   }
-  input {
+  input, button {
     height: 54px;
   }
   .control {
@@ -21,11 +22,10 @@ const HomeSignUp = () => (
   <Container>
     <div className="section container">
       <div className="columns is-vcentered is-centered">
-        <div className="column is-5 has-text-centered">
-          <Title>Subscribe our newsletter</Title>
+        <div className="column is-7 has-text-centered">
+          <Title white>Subscribe our newsletter</Title>
           <Subtitle>
-            Subscribe to our newsletter for daily/weekly update of our products
-            and services.
+            Subscribe to our newsletter for update of our services.
           </Subtitle>
         </div>
       </div>
