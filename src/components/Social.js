@@ -5,7 +5,7 @@ import youtube from '../assets/images/youtube.svg';
 
 const Container = styled.div`
   img {
-    height: 50px;
+    height: 3rem;
   }
   a {
     margin: 0.75rem;
@@ -32,7 +32,7 @@ const Item = [
 
 const Social = () => (
   <Container className="flex">
-    {Item.map((item) => (
+    {Item.map(item => (
       <a href={item.link} key={item.id}>
         <img src={item.icon} alt="social-icons" />
       </a>

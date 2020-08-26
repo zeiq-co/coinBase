@@ -14,6 +14,10 @@ const StyledParticles = styled(Particles)`
   }
 `;
 
+const Container = styled.div`
+  background: ${props => props.theme.primaryColor};
+`;
+
 const logIn = () => {
   return (
     <Layout>
@@ -21,7 +25,7 @@ const logIn = () => {
         title="LogIn"
         description="A matrix platform smart contract Ethereum"
       />
-      <>
+      <Container>
         <StyledParticles
           params={{
             particles: {
@@ -49,7 +53,7 @@ const logIn = () => {
             </div>
           </div>
         </div>
-      </>
+      </Container>
     </Layout>
   );
 };

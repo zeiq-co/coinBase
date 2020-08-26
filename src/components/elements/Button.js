@@ -11,7 +11,7 @@ const Container = styled.button`
   border: none;
   transition: all 0.5s ease;
   :hover {
-    transform: scale(1.07);
+    transform: scale(1.05);
   }
   span {
     font-size: ${props => props.theme.fontSmall}!important;

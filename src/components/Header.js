@@ -15,17 +15,6 @@ const Container = styled.div`
   .is-active {
     background: ${props => props.theme.primaryColor};
   }
-  /* .navbar-item {
-    background: ${props => props.theme.gradientSecondary};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    :hover {
-      background: ${props => props.theme.gradientSecondary};
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      border-bottom: 2px solid ${props => props.theme.secondaryColor};
-    }
-  } */
   .navbar-end {
     margin-left: 0;
   }
