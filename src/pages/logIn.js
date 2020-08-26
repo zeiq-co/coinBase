@@ -1,10 +1,7 @@
-import groq from 'groq';
-import axios from 'axios';
 import { NextSeo } from 'next-seo';
 import Particles from 'react-particles-js';
 import styled from 'styled-components';
 
-import sanity from '../utils/sanity';
 import Layout from '../components/Layout';
 import AuthorizationForm from '../components/AuthorizationForm';
 

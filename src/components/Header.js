@@ -29,6 +29,9 @@ const Container = styled.div`
       border-bottom: 2px solid #00ece2;
       background: ${props => props.theme.primaryColor};
     }
+    :focus {
+      background: ${props => props.theme.primaryColor};
+    }
   }
   .nav-items {
     margin: auto 1.5rem;

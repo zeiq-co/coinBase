@@ -4,11 +4,11 @@ import { Button, Title } from './elements';
 const Container = styled.p`
   input {
     height: 50px;
-    background: ${props => props.theme.darkBlack};
+    background: ${props => props.theme.primaryColor};
     border: none;
     box-shadow: none;
     ::placeholder {
-      background: ${props => props.theme.colorGradient};
+      background: ${props => props.theme.gradientSecondary};
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -18,16 +18,17 @@ const Container = styled.p`
   }
   button {
     width: 100%;
+    height: 50px;
   }
   .input-Wrapper {
     padding: 2px;
-    background: ${props => props.theme.colorGradient};
+    background: ${props => props.theme.gradientSecondary};
     margin-bottom: 1.5rem;
     border-radius: 3rem;
   }
 `;
 
-const AuthorizationForm = ({title}) => (
+const AuthorizationForm = ({ title }) => (
   <Container>
     <Title>{title}</Title>
     <div className="input-Wrapper">
