@@ -9,8 +9,10 @@ const Container = styled.div`
   margin-bottom: 2rem;
   .item {
     padding: 0.75rem 1.5rem;
-    background: ${(props) => props.theme.gradientSecondary};
+    background: ${props => props.theme.gradientSecondary};
     border-radius: 10px;
+    border: none;
+    width: 100%;
   }
   p {
     line-height: 27px !important;
@@ -42,8 +44,7 @@ const FaqItem = ({ data }) => {
           <button
             className="btn"
             onClick={() => setActive(!active)}
-            type="submit"
-          >
+            type="submit">
             {active ? (
               <img src={iconUp} alt="arrow-up" />
             ) : (
