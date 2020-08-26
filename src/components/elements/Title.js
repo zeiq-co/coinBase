@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 const Container = styled.h2`
   background: ${props =>
-    props.dark ? props.theme.darkBlack : props.theme.colorGradient};
-  font-size: ${props => props.theme.fontLarge};
+    props.white ? '#fff' : props.theme.gradientSecondary};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: ${props => (props.medium ? '1.5rem' : '3rem')};
 `;
 
 const Title = ({ children, ...props }) => (

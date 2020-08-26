@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 import { Subtitle, Title } from './elements';
-import ethereum from '../assets/images/ethereum-banner.svg';
+import background from '../assets/images/video-bg.jpg';
+import ethereum from '../assets/images/logo-lite.png';
 
 const Container = styled.div`
-  .section {
-    padding: 3rem 1.5rem 0rem;
-  }
-  background: ${props => props.theme.darkBlack};
+    background-image:url('${background}');
+    background-position: center;
   p {
     margin-top: 1rem;
   }
@@ -39,7 +38,7 @@ const Hero = () => (
           <img src={ethereum} alt="ethereum" />
         </div>
         <div className="column">
-          <Title>Welcome to Ethflix</Title>
+          <Title white>Welcome to Ethflix</Title>
           <Subtitle>
             Smart contract technology is a new phenomenon in the modern
             decentralized economy. It allows, in accordance with the program

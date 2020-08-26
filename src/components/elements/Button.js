@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.button`
-  height: 54px;
+  height: 45px;
   padding: 0rem 2.5rem !important;
   background: ${props =>
-    props.secondary ? props.theme.darkBlack : props.theme.backgroundGradient};
+    props.secondary
+      ? props.theme.gradientPrimary
+      : props.theme.gradientSecondary};
   border: none;
   transition: all 0.5s ease;
   :hover {
@@ -13,10 +15,7 @@ const Container = styled.button`
   }
   span {
     font-size: ${props => props.theme.fontSmall}!important;
-    background: ${props =>
-      props.secondary ? props.theme.colorGradient : props.theme.darkBlack};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: ${props => (props.secondary ? '#fff' : props.theme.primaryColor)};
   }
 `;
 

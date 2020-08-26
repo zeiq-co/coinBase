@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 import Button from './elements/Button';
-import logo from '../assets/images/Logo.svg';
+import logo from '../assets/images/Logo.png';
 
 const Container = styled.div`
   padding: 1rem 0.5rem;

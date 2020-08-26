@@ -2,21 +2,21 @@ import { createGlobalStyle } from 'styled-components';
 
 // http://chir.ag/projects/name-that-color/
 export const colors = {
-  caribbeanGreen: '#00D1B2',
-  colorGradient: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)',
+  caribbeanGreen: '#00ece2',
 };
 
 export default {
-  primary: colors.caribbeanGreen,
-  backgroundGradient:
-    'linear-gradient(174.48deg, #FD749B -12.41%, #281AC8 88.56%)',
-  colorGradient: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)',
+  primaryColor: '#110642',
+  secondaryColor: colors.caribbeanGreen,
+  mainBrandColor: '#1b0a5f',
+  lightAccent: '#120641',
+  gradientPrimary:
+    'linear-gradient(to right, rgb(205, 69, 255), rgb(115, 104, 255));',
+  gradientSecondary:
+    'linear-gradient(to right, rgb(0, 136, 254), rgb(38, 215, 212))',
   darkBlack: '#000000',
   textColor: '#666d7a',
   textLight: '#A2A2A2',
-  fontSmall: '14px',
-  fontMedium: '18px',
-  fontLarge: '28px',
 };
 
 export const GlobalStyle = createGlobalStyle`

@@ -3,29 +3,29 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { useState } from 'react';
 
-import logo from '../assets/images/Logo.svg';
+import logo from '../assets/images/Logo.png';
 import Button from './elements/Button';
 
 const Container = styled.div`
-  background: ${props => props.theme.darkBlack};
+  background: ${props => props.theme.primaryColor};
   padding: 1rem 1.5rem;
   nav {
-    background: ${props => props.theme.darkBlack};
+    background: ${props => props.theme.primaryColor};
   }
   .is-active {
-    background: ${props => props.theme.darkBlack};
+    background: ${props => props.theme.primaryColor};
   }
-  .navbar-item {
-    background: ${props => props.theme.colorGradient};
+  /* .navbar-item {
+    background: ${props => props.theme.gradientSecondary};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     :hover {
-      background: ${props => props.theme.colorGradient};
+      background: ${props => props.theme.gradientSecondary};
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      border-bottom: 2px solid #fd749b;
+      border-bottom: 2px solid ${props => props.theme.secondaryColor};
     }
-  }
+  } */
   .navbar-end {
     margin-left: 0;
   }
@@ -36,6 +36,9 @@ const Container = styled.div`
   }
   .nav-items {
     margin: auto 1.5rem;
+  }
+  img {
+    height: 3.5rem;
   }
 `;
 
@@ -92,7 +95,7 @@ const Header = () => {
           <div className="navbar-start">
             {NavItems.map(item => (
               <Link href={item.url} key={item.id}>
-                <a className="navbar-item has-text-weight-semibold nav-items is-uppercase">
+                <a className="navbar-item has-text-weight-semibold nav-items is-uppercase has-text-white">
                   {item.name}
                 </a>
               </Link>
@@ -101,7 +104,7 @@ const Header = () => {
           <div className="navbar-end">
             <div className="buttons">
               <Link href="/logIn">
-                <Button>login</Button>
+                <Button secondary>login</Button>
               </Link>
               <Link href="/register">
                 <Button>SIGNUP</Button>

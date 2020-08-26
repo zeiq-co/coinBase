@@ -5,9 +5,8 @@ import hero from '../assets/images/hero-img.png';
 import waveTop from '../assets/images/wave-1.svg';
 
 const Container = styled.div`
-  background: linear-gradient(174.48deg, #fd749b -12.41%, #281ac8 88.56%);
+  background: ${props => props.theme.primaryColor};
   h2 {
-    color: ${props => props.theme.darkBlack};
     font-size: 8rem;
   }
   .img-wrapper {
@@ -35,10 +34,10 @@ const Hero = () => (
     <div className="section container">
       <div className="columns is-vcentered">
         <div className="column has-text-centered">
-          <h2 className="is-size-1-mobile is-uppercase has-text-weight-bold">
+          <h2 className="is-size-1-mobile is-uppercase has-text-weight-bold has-text-white">
             Ethflix
           </h2>
-          <Subtitle dark className="is-size-3">
+          <Subtitle className="is-size-3 has-text-white">
             100% DECENTRALIZED
           </Subtitle>
           <Button secondary>JOIN US</Button>
@@ -50,7 +49,6 @@ const Hero = () => (
         </div>
       </div>
     </div>
-    <img src={waveTop} className="bottom-img" alt="wave" />
   </Container>
 );
 
