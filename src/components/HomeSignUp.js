@@ -4,9 +4,9 @@ import { Subtitle, Title, Button } from './elements';
 
 const Container = styled.div`
   padding: 0 0 2.5rem;
-  background: ${(props) => props.theme.gradientSecondary};
+  background: ${props => props.theme.gradientSecondary};
   .bottom {
-    background: ${(props) => props.theme.mainBrandColor};
+    background: ${props => props.theme.mainBrandColor};
     border-radius: 10px;
     margin-top: 0.5rem;
   }

@@ -12,31 +12,30 @@ const Container = styled.div`
     justify-content: space-between;
   }
   img {
-    height: 6rem;
+    height: 4rem;
   }
-  .nav-item {
-    background: ${props => props.theme.colorGradient};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    :hover {
-      background: ${props => props.theme.colorGradient};
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      border-bottom: 2px solid #fd749b;
-    }
+  .dropdown-content {
+    background: ${props => props.theme.mainBrandColor};
   }
   .is-flex {
     align-items: center;
     justify-content: flex-end;
   }
+  .nav-item {
+    background: transparent;
+    :hover {
+      border-bottom: 2px solid #00ece2;
+      background: transparent;
+    }
+    :focus {
+      background: transparent;
+    }
+  }
 `;
 
 const CustomerHeader = () => (
   <Container className="container">
-    <nav
-      className="navbar"
-      role="navigation"
-      aria-label="main navigation">
+    <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link href="/">
           <a>
@@ -45,23 +44,23 @@ const CustomerHeader = () => (
         </Link>
       </div>
       <div>
-        <div className="navbar-end is-flex">
-          <a className="navbar-item has-text-weight-semibold is-uppercase nav-item">
+        <div className="navbar-end is-flex ">
+          <a className="navbar-item has-text-weight-semibold is-uppercase nav-item has-text-white">
             Dashboard
           </a>
           <div className="navbar-item has-text-weight-semibold is-uppercase dropdown is-hoverable">
             <div className="dropdown-trigger">
-              <a className="navbar-item has-text-weight-semibold is-uppercase nav-item">
+              <a className="navbar-item has-text-weight-semibold is-uppercase nav-item has-text-white">
                 Office
               </a>
             </div>
             <div className="dropdown-menu" id="dropdown-menu4" role="menu">
               <div className="dropdown-content">
                 <div className="dropdown-item">
-                  <a className="navbar-item has-text-weight-semibold is-uppercase nav-item">
+                  <a className="navbar-item has-text-weight-semibold is-uppercase nav-item has-text-white">
                     Partners
                   </a>
-                  <a className="navbar-item has-text-weight-semibold  is-uppercase nav-item">
+                  <a className="navbar-item has-text-weight-semibold  is-uppercase nav-item has-text-white">
                     Statistics
                   </a>
                 </div>

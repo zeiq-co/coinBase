@@ -21,7 +21,7 @@ export default {
 
 export const GlobalStyle = createGlobalStyle`
   body {
-    background: #000;
+    background: #110642;
 		margin: 0;
     padding: 0;
     font-family: 'Exo 2', sans-serif !important;

@@ -10,7 +10,7 @@ const Container = styled.div`
 
   .item {
     border-radius: 1rem;
-    background: ${props => props.theme.darkBlack};
+    background: ${props => props.theme.mainBrandColor};
     transition: all 0.5s ease;
     :hover {
       transform: scale(1.06);
@@ -31,12 +31,12 @@ const CardItems = [
     count: '6,024',
   },
   {
-    id: 1,
+    id: 2,
     title: 'PARTICIPANTS HAVE EARNED ETH',
     count: '3,111.7806',
   },
   {
-    id: 1,
+    id: 3,
     title: 'PARTICIPANTS HAVE EARNED USD',
     count: '1,192,216.49',
   },
@@ -55,7 +55,7 @@ const ParticipantDetails = () => (
               <div className="item">
                 <div className="has-text-centered cards">
                   <Subtitle>{item.title}</Subtitle>
-                  <Title>{item.count}</Title>
+                  <Title medium>{item.count}</Title>
                 </div>
               </div>
             </div>
