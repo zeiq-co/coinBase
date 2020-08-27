@@ -17,12 +17,10 @@ const Container = styled.div`
   p {
     line-height: 27px !important;
   }
-  .btn {
-    background: transparent;
-    border: none;
-  }
+
   .is-flex {
     justify-content: space-between;
+    align-items: center;
   }
   img {
     height: 0.75rem;
@@ -41,16 +39,11 @@ const FaqItem = ({ data }) => {
           <Title white className="is-size-5 has-text-weight-bold is-uppercase">
             {data.title}
           </Title>
-          <button
-            className="btn"
-            onClick={() => setActive(!active)}
-            type="submit">
-            {active ? (
-              <img src={iconUp} alt="arrow-up" />
-            ) : (
-              <img src={iconDown} alt="arrow-down" />
-            )}
-          </button>
+          {active ? (
+            <img src={iconUp} alt="arrow-up" />
+          ) : (
+            <img src={iconDown} alt="arrow-down" />
+          )}
         </div>
       </button>
       {active && <Subtitle>{data.subtitle}</Subtitle>}

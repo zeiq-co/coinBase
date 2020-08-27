@@ -11,6 +11,9 @@ const Container = styled.div`
   padding: 1rem 0rem;
   background-image:url('${background}');
   background-position: center;
+  @media only screen and (max-width: 767px) {
+    background-position: inherit;
+  }
   .top {
     padding: 3rem 1.5rem 1rem;
   }

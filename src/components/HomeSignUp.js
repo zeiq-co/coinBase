@@ -4,9 +4,9 @@ import { Subtitle, Title, Button } from './elements';
 
 const Container = styled.div`
   padding: 0 0 2.5rem;
-  background: ${props => props.theme.gradientSecondary};
+  background: ${(props) => props.theme.gradientSecondary};
   .bottom {
-    background: ${props => props.theme.mainBrandColor};
+    background: ${(props) => props.theme.mainBrandColor};
     border-radius: 10px;
     margin-top: 0.5rem;
   }
@@ -16,6 +16,16 @@ const Container = styled.div`
   }
   .control {
     margin: 1rem 0rem;
+  }
+  .is-grouped {
+    @media only screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+  .control {
+    @media only screen and (max-width: 767px) {
+      margin-right: 0rem !important;
+    }
   }
 `;
 
@@ -34,7 +44,7 @@ const HomeSignUp = () => (
         <div className="column is-9 has-text-centered">
           <div className="section  bottom columns is-centered">
             <div className="column is-9">
-              <div className="field is-grouped is-block-mobile">
+              <div className="field is-grouped">
                 <p className="control is-expanded">
                   <input
                     className="input is-rounded"
